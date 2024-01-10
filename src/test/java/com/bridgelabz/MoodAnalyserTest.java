@@ -17,4 +17,15 @@ public class MoodAnalyserTest {
         String actual = ma.analyseMood();
         Assert.assertEquals("HAPPY",actual);
     }
+    @Test
+    public void passingNullShouldReturnHappy(){
+        MoodAnalyserMain ma = new MoodAnalyserMain(null);
+        try {
+            String actual = ma.analyseMood();
+            Assert.assertEquals("HAPPY",actual);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
 }
