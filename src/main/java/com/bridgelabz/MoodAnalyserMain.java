@@ -5,6 +5,11 @@ public class MoodAnalyserMain {
         if(msg.contains("Sad")){
             return "SAD";
         }
-        return "Happy";
+        //return "Happy";
+        else {
+            msg.contains("Happy");
+                return "HAPPY";
+            }
+        }
     }
-}
+
